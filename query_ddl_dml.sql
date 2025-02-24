@@ -1,7 +1,7 @@
 /*
 ==============  DDL =======================
 */
---Membuat database
+-- Membuat database
 CREATE DATABASE db_kampus;
 USE db_kampus;
 
@@ -11,13 +11,13 @@ CREATE TABLE mahasiswa (
 	nama VARCHAR(30),
 	jurusan VARCHAR(20));
 
---menambahkan coloumn baru "alamat"
+-- menambahkan coloumn baru "alamat"
 ALTER TABLE mahasiswa ADD alamat VARCHAR(50);
 
---menghapus table mahasiswa
+-- menghapus table mahasiswa
 DROP TABLE mahasiswa;
 
---menghapus isi table mahasiswa tanpa menghapus strukturnya
+-- menghapus isi table mahasiswa tanpa menghapus strukturnya
 TRUNCATE TABLE mahasiswa;
 /*
 ==============  DML =======================
@@ -31,10 +31,10 @@ INSERT INTO mahasiswa VALUES(111111, 'Sarah', 'SI','Bandung'),
 -- menampilkan data dari table mahasiswa
 SELECT * FROM mahasiswa;
 
---update nama dari table mahasiswa dengan kriteria sesuai NPM
+-- update nama dari table mahasiswa dengan kriteria sesuai NPM
 UPDATE mahasiswa SET nama='Septi Neiras' WHERE npm=444444;
 
---menghapus table mahasiswa
+-- menghapus table mahasiswa
 DELETE FROM mahasiswa WHERE npm=444444;
 
 /*
