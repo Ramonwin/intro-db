@@ -22,7 +22,7 @@ TRUNCATE TABLE mahasiswa;
 /*
 ==============  DML =======================
 */
---menambahkan data ke dalam table mahasiswa
+-- menambahkan data ke dalam table mahasiswa
 INSERT INTO mahasiswa VALUES(111111, 'Sarah', 'SI','Bandung'),
 							(222222, 'Melinda', 'IF','jakarta'),
 							(333333, 'Okta', 'IF','Bogor'),
